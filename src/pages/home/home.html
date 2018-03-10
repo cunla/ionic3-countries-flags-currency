@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar no-border-bottom>
+    <ion-title>Country currency search bar</ion-title>
+  </ion-navbar>
+  <ion-searchbar placeholder="Filter Items with Cancel"
+                 showCancelButton color="danger"
+                 (ionInput)="filterItems($event)">
+  </ion-searchbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-avatar item-start>
+        <img [src]="item.flag"/>
+      </ion-avatar>
+      <h2> {{ item.nativeName }}</h2>
+      <h3>{{ item.name }}</h3>
+      <p>
+        {{ item.capital }}
+      </p>
+      <div item-end>
+        {{ item.currencies[0].symbol }}
+        {{ item.currencies[0].code }}
+      </div>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
