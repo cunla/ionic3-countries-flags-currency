@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-navbar>
+	
+    <ion-title >{{item.name}}</ion-title>
+	
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+  <ion-list>
+    <ion-item>
+	   <ion-label>
+           Area
+       </ion-label>
+       <div item-content>
+          {{item.area}}
+       </div>
+	</ion-item>
+	<ion-item>
+	   <ion-label>
+           Gini
+       </ion-label>
+       <div item-content>
+          {{item.gini}}
+       </div>
+	</ion-item>
+	<ion-item>
+	   <ion-label>
+           Population
+       </ion-label>
+       <div item-content>
+         {{item.population}}
+       </div>
+	</ion-item>
+    <ion-item>
+	   <ion-label>
+           Latlng
+       </ion-label>
+       <div item-content>
+         {{item.latlng}}
+       </div>
+	</ion-item>		
+  </ion-list>
+  
+</ion-content>

@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
 import {HttpClient} from "@angular/common/http";
 import {Countries, Country} from "./interface";
+import {CountryDetailsPage} from "../country-details/country-details";
 
 @Component({
   selector: 'page-home',
@@ -24,6 +25,10 @@ export class HomePage {
         this.items = this.allItems;
       }
     );
+  }
+
+  viewDetails(item) {
+      this.navCtrl.push(CountryDetailsPage, {item:item});
   }
 
   filterItems(ev: any) {
