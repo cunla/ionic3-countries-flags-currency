@@ -12,7 +12,7 @@
 <ion-content padding>
   
   <ion-list>
-    <ion-item>
+    <ion-item *ngIf="item.area">
 	   <ion-label>
            Area
        </ion-label>
@@ -20,7 +20,7 @@
           {{item.area}}
        </div>
 	</ion-item>
-	<ion-item>
+	<ion-item  *ngIf="item.gini">
 	   <ion-label>
            Gini
        </ion-label>
@@ -28,7 +28,7 @@
           {{item.gini}}
        </div>
 	</ion-item>
-	<ion-item>
+	<ion-item *ngIf="item.population">
 	   <ion-label>
            Population
        </ion-label>
@@ -36,7 +36,7 @@
          {{item.population}}
        </div>
 	</ion-item>
-    <ion-item>
+    <ion-item *ngIf="item.latlng">
 	   <ion-label>
            Latlng
        </ion-label>
