@@ -1,8 +1,8 @@
 {
-  "name": "tabs",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "countries-app",
+  "version": "1.0.0",
+  "author": "Daniel Moran",
+  "homepage": "",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -34,5 +34,5 @@
     "@ionic/app-scripts": "3.1.8",
     "typescript": "2.4.2"
   },
-  "description": "An Ionic project"
+  "description": "An app that shows countries flags and additional data"
 }
